@@ -18,11 +18,6 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-models:
-  dbt_snowflake_tagging:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: table
 
 on-run-end: 
   - "{{apply_pii_tags_models(results)}}"
