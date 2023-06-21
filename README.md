@@ -9,8 +9,8 @@ https://docs.getdbt.com/reference/dbt-jinja-functions/graph
 
 
 ```
-CREATE SCHEMA MASKING_POLCIES;
-USE SCHEMA MASKING_POLCIES;
+CREATE SCHEMA MASKING_POLICIES;
+USE SCHEMA MASKING_POLICIES;
 
 CREATE OR REPLACE MASKING POLICY account_name_mask
 AS (val string) RETURNS string ->
